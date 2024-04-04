@@ -24,7 +24,7 @@
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
 
-    <title>COTRAVEL, covid-proof travel | Our destinations</title>
+    <title>BarkBudget | All our wallet-friendly tips</title>
   </head>
   <body class="h-100 d-flex flex-column">
 
@@ -32,41 +32,33 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="images/cotravel-logo.svg" alt="CoTravel Logo" width="72">
-          <span class="fw-bold text-cyan">CO</span>
-          <span class="fw-bold text-magenta">TRAVEL</span>
+          <img src="images/bark-budget-logo.png" alt="BarkBudget Logo" width="72">
+          <span class="fw-bold text-brown">Bark</span>
+          <span class="fw-bold text-green">Budget</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav flex-grow-1">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#services">Our services</a>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link active dropdown-toggle" href="destinations.html" id="destinationDropdownButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Choose a destination
+                Our pawsome tips
               </a>
               <ul class="dropdown-menu" aria-labelledby="destinationDropdownButton" id="destinationDropdown">
-                <li><a class="dropdown-item" aria-current="page" href="destinations.html#top">All destinations</a></li>
+                <li><a class="dropdown-item" aria-current="page" href="destinations.html#top">All tips</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="destinations.html#argentina">Argentina</a></li>
-                <li><a class="dropdown-item" href="destinations.html#istanbul">Istanbul</a></li>
-                <li><a class="dropdown-item" href="destinations.html#japan">Japan</a></li>
-                <li><a class="dropdown-item" href="destinations.html#nyc">New York</a></li>
-                <li><a class="dropdown-item" href="destinations.html#thailand">Thailand</a></li>
-                <li><a class="dropdown-item" href="destinations.html#vietnam">Vietnam</a></li>
+                <li><a class="dropdown-item" href="destinations.html#monthly-doggy-budget">Monthly Doggy Budget</a></li>
+                <li><a class="dropdown-item" href="destinations.html#affordable-dog-food">Affordable Dog Food</a></li>
+                <li><a class="dropdown-item" href="destinations.html#grooming-hacks">Grooming Hacks</a></li>
+                <li><a class="dropdown-item" href="destinations.html#toy-tips">Toy Tips</a></li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="calendar.html">Choose a date</a>
             </li>
             <!-- A call to action at the end of the navigation bar.
               This uses the Offcanvas pattern, see documentation at https://getbootstrap.com/docs/5.1/components/offcanvas/ -->
             <li class="nav-item ms-lg-auto">
               <button class="btn btn-danger" data-bs-target="#offcanvas" data-bs-toggle="offcanvas" aria-controls="offcanvas">
-                Contact us!
+                Sign Up!
               </button>
             </li>
           </ul>
@@ -77,7 +69,7 @@
 
     <!-- A hero section. hero-header is defined in our own styles -->
     <div class="bg-dark py-4 text-light container-fluid hero-header text-center">
-      <h1>Our destinations</h1>
+      <h1>Wallet-friendly tips for every dog parent</h1>
     </div>
 
     <!-- The list of destinations uses a "Tab" system.
@@ -85,22 +77,16 @@
     <div class="container">
       <ul class="nav nav-pills fw-bold my-2" role="tablist" id="destinationTab">
         <li class="nav-item" role="presentation">
-          <button class="nav-link bg-gradient" id="argentina-tab" data-bs-toggle="tab" data-bs-target="#argentina" type="button" role="tab" aria-controls="argentina" aria-selected="false" data-coords="-34.603333, -58.381667">Argentina</button>
+          <button class="nav-link bg-gradient" id="monthly-doggy-budget-tab" data-bs-toggle="tab" data-bs-target="#monthly-doggy-budget" type="button" role="tab" aria-controls="monthly-doggy-budget" aria-selected="false" data-coords="-34.603333, -58.381667">Monthly Doggy Budget</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="istanbul-tab" data-bs-toggle="tab" data-bs-target="#istanbul" type="button" role="tab" aria-controls="istanbul" aria-selected="false" data-coords="41.013611, 28.955">Istanbul</button>
+          <button class="nav-link" id="affordable-dog-food-tab" data-bs-toggle="tab" data-bs-target="#affordable-dog-food" type="button" role="tab" aria-controls="affordable-dog-food" aria-selected="false" data-coords="41.013611, 28.955">Affordable Dog Food</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="japan-tab" data-bs-toggle="tab" data-bs-target="#japan" type="button" role="tab" aria-controls="japan" aria-selected="false" data-coords="34.275556, 132.307778">Japan</button>
+          <button class="nav-link" id="grooming-hacks-tab" data-bs-toggle="tab" data-bs-target="#grooming-hacks" type="button" role="tab" aria-controls="grooming-hacks" aria-selected="false" data-coords="34.275556, 132.307778">Grooming Hacks</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="nyc-tab" data-bs-toggle="tab" data-bs-target="#nyc" type="button" role="tab" aria-controls="nyc" aria-selected="false" data-coords="40.712778, -74.006111">New York</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="thailand-tab" data-bs-toggle="tab" data-bs-target="#thailand" type="button" role="tab" aria-controls="thailand" aria-selected="false" data-coords="13.7525, 100.494167">Thailand</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="vietnam-tab" data-bs-toggle="tab" data-bs-target="#vietnam" type="button" role="tab" aria-controls="vietnam" aria-selected="false" data-coords="16.069444, 108.209722">Vietnam</button>
+          <button class="nav-link" id="toy-tips-tab" data-bs-toggle="tab" data-bs-target="#toy-tips" type="button" role="tab" aria-controls="toy-tips" aria-selected="false" data-coords="40.712778, -74.006111">Toy Tips</button>
         </li>
       </ul>
       <!-- End of navigation tabs -->
@@ -112,7 +98,7 @@
       <!-- This is where details on each destination will be -->
       <div class="tab-content mb-5">
         <!-- The destination panes start hidden, but will be made visible when clicking on a destination -->
-        <div class="tab-pane fade" id="argentina" role="tabpanel" aria-labelledby="argentina-tab">
+        <div class="tab-pane fade" id="monthly-doggy-budget" role="tabpanel" aria-labelledby="monthly-doggy-budget-tab">
           <div class="bg-light bg-gradient fw-bold py-4 text-center">
             <h3>Argentina</h3>
             <h4 class="fst-italic">The land of tango and barbecue</h4>
@@ -127,7 +113,7 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="istanbul" role="tabpanel" aria-labelledby="istanbul-tab">
+        <div class="tab-pane fade" id="affordable-dog-food" role="tabpanel" aria-labelledby="affordable-dog-food-tab">
           <div class="bg-light bg-gradient fw-bold py-4 text-center">
             <h3>Istanbul, Turkey</h3>
             <h4 class="fst-italic">The city on two continents</h4>
@@ -144,9 +130,9 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="japan" role="tabpanel" aria-labelledby="japan-tab">
+        <div class="tab-pane fade" id="grooming-hacks" role="tabpanel" aria-labelledby="grooming-hacks-tab">
           <div class="bg-light bg-gradient fw-bold py-4 text-center">
-            <h3>Japan</h3>
+            <h3>Grooming Hacks</h3>
             <h4 class="fst-italic">Visit futuristic cities and traditional shrines in the land of the rising sun!</h4>
           </div>
           <div class="row">
@@ -165,7 +151,7 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="nyc" role="tabpanel" aria-labelledby="nyc-tab">
+        <div class="tab-pane fade" id="toy-tips" role="tabpanel" aria-labelledby="toy-tips-tab">
           <div class="bg-light bg-gradient fw-bold py-4 text-center">
             <h3>New York, New York</h3>
             <h4 class="fst-italic">The cultural and financial capital of the USA</h4>
@@ -181,42 +167,6 @@
               <button class="btn btn-danger d-block w-100" data-bs-target="#offcanvas" data-bs-toggle="offcanvas" aria-controls="offcanvas">Get a quote for a holiday in New York, USA</button>
             </div>
           </div></div>
-        <div class="tab-pane fade" id="thailand" role="tabpanel" aria-labelledby="thailand-tab">
-          <div class="bg-light bg-gradient fw-bold py-4 text-center">
-            <h3>Thailand</h3>
-            <h4 class="fst-italic">From the beach to the jungle, enjoy the land of smiles</h4>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 col-lg-5 col-xl-4">
-              <img src="images/destination-thailand.jpg" class="img-fluid rounded mx-auto d-block" alt="A photo of your destination">
-            </div>
-            <div class="col-sm-6 col-lg-7 col-xl-8 py-2">
-              <p>The full name of Bangkok is <em>Krungthepmahanakhon Amonrattanakosin Mahintharayutthaya Mahadilokphop Noppharatratchathaniburirom Udomratchaniwetmahasathan Amonphimanawatansathit Sakkathattiyawitsanukamprasit</em> or, as locals call it, กรุงเทพมหานคร อมรรัตนโกสินทร์ มหินทรายุธยา มหาดิลกภพ นพรัตนราชธานีบูรีรมย์ อุดมราชนิเวศน์มหาสถาน อมรพิมานอวตารสถิต สักกะทัตติยวิษณุกรรมประสิทธิ์.</p>
-              <button class="btn btn-danger d-block w-100" data-bs-target="#offcanvas" data-bs-toggle="offcanvas" aria-controls="offcanvas">Get a quote for a holiday in Thailand</button>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="vietnam" role="tabpanel" aria-labelledby="vietnam-tab">
-          <div class="bg-light bg-gradient fw-bold py-4 text-center">
-            <h3>Việt Nam</h3>
-            <h4 class="fst-italic">Discover the many treasures of this wonderful country!</h4>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 col-lg-5 col-xl-4">
-              <img src="images/destination-vietnam.jpg" class="img-fluid rounded mx-auto d-block" alt="A photo of your destination">
-            </div>
-            <div class="col-sm-6 col-lg-7 col-xl-8 py-2">
-              <ul>
-                <li>Fly direct from Schiphol to Hanoi or Saigon (Ho Chi Minh City).</li>
-                <li>Bathe in the energy of bustling metropolises.</li>
-                <li>From Phở soup to Bánh mì sandwiches, enjoy truly amazing food at every street corner.</li>
-                <li>Discover the magical islets of the Hạ Long Bay.</li>
-                <li>Trek around mountains and rice paddies in Sapa.</li>
-              </ul>
-              <button class="btn btn-danger d-block w-100" data-bs-target="#offcanvas" data-bs-toggle="offcanvas" aria-controls="offcanvas">Get a quote for a holiday in Vietnam</button>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <!-- End of destination details -->
@@ -235,38 +185,32 @@
       see documentation at https://getbootstrap.com/docs/5.1/components/offcanvas/ -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
       <div class="offcanvas-header">
-        <h3 class="offcanvas-title" id="offcanvasLabel">Contact us</h3>
+        <h3 class="offcanvas-title" id="offcanvasLabel">Sign Up</h3>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <div>
-          <h5>Call <span class="text-cyan fw-bold">CO</span><span class="text-magenta fw-bold">TRAVEL</span> now for a quote</h5>
-          <a class="btn btn-outline-danger" href="tel:+31765332203">Call (076) 533 22 03</a>
-        </div>
-        <hr>
-        <div>
-          <h5>Fill in the form to email us</h5>
+		  <div>
+                By signing up to our
+                <span class="text-brown fw-bold">Bark</span><span class="text-green fw-bold">Budget</span>
+                newsletter, you'll be the first to know about the launch of our budget-conscious dog parent forum!
+            </div>
+		  <div>
           <!-- This form includes required fields. For more details on validation,
             see https://getbootstrap.com/docs/5.1/forms/validation/ -->
-          <form class="needs-validation" method="post" action="mailto:buas@buas.nl?subject=CoTravel%20Enquiry" enctype="text/plain">
+          <form class="needs-validation" method="post" action="mailto:barkbudget@gmail.com?subject=BarkBudget%20Newsletter%20Subscription" enctype="text/plain">
             <div class="my-3">
               <label for="emailfield" class="form-label">Email address</label>
               <input type="email" class="form-control" id="emailfield" name="sender-email" required>
             </div>
-            <div class="my-3">
-              <label for="messagefield" class="form-label">Your message</label>
-              <textarea class="form-control" id="messagefield" rows="5" name="message-contents" required></textarea>
-            </div>
-            <div class="form-check my-3">
-              <input type="checkbox" class="form-check-input" id="newsletter" name="subscribe-newsletter" checked>
-              <label class="form-check-label" for="newsletter">
-                Subscribe to the awesome
-                <span class="text-cyan fw-bold">CO</span><span class="text-magenta fw-bold">TRAVEL</span>
-                newsletter, you'll be the first to know about our new destinations
-              </label>
-            </div>
-            <button type="submit" class="btn btn-primary">Send a message</button>
+            <button type="submit" class="btn btn-primary">Confirm</button>
           </form>
+        </div>
+		  <hr>
+        <div>
+          <h5>Follow us on the <span class="text-brown fw-bold">Bark</span><span class="text-green fw-bold">Budget</span> Instagram page</h5>
+          <a class=".btn-outline-danger" href="https://www.instagram.com/barkbudget/" target="_blank">
+			<img class="instagram-icon" src="images/Instagram-logo.png" alt="Instagram" width="60">
+			</a>
         </div>
       </div>
     </div>

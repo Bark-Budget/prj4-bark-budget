@@ -1,6 +1,6 @@
-# prj4-cotravel
+# prj4-bark-budget
  
-A template for the PRJ4 course showcasing the following elements:
+A website for the PRJ4 course showcasing the following elements:
 
 ### On all pages:
 - A Navbar (https://getbootstrap.com/docs/5.1/components/navbar/)

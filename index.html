@@ -24,7 +24,7 @@
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
 
-    <title>COTRAVEL, covid-proof travel</title>
+    <title>BarkBudget</title>
   </head>
   <body class="h-100 d-flex flex-column">
 
@@ -32,41 +32,34 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="images/cotravel-logo.svg" alt="CoTravel Logo" width="72">
-          <span class="fw-bold text-cyan">CO</span>
-          <span class="fw-bold text-magenta">TRAVEL</span>
+          <img src="images/bark-budget-logo.png" alt="BarkBudget Logo" width="72">
+          <span class="fw-bold text-brown">Bark</span>
+          <span class="fw-bold text-green">Budget</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav flex-grow-1">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html#services">Our services</a>
-            </li>
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="destinations.html" id="destinationDropdownButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Choose a destination
+                Our pawsome tips
               </a>
               <ul class="dropdown-menu" aria-labelledby="destinationDropdownButton" id="destinationDropdown">
-                <li><a class="dropdown-item" href="destinations.html#top">All destinations</a></li>
+                <li><a class="dropdown-item" href="destinations.html#top">All Tips</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="destinations.html#argentina">Argentina</a></li>
-                <li><a class="dropdown-item" href="destinations.html#istanbul">Istanbul</a></li>
-                <li><a class="dropdown-item" href="destinations.html#japan">Japan</a></li>
-                <li><a class="dropdown-item" href="destinations.html#nyc">New York</a></li>
-                <li><a class="dropdown-item" href="destinations.html#thailand">Thailand</a></li>
-                <li><a class="dropdown-item" href="destinations.html#vietnam">Vietnam</a></li>
+                <li><a class="dropdown-item" href="destinations.html#monthly-doggy-budget">Monthly Doggy Budget</a></li>
+                <li><a class="dropdown-item" href="destinations.html#affordable-dog-food">Affordable Dog Food</a></li>
+                <li><a class="dropdown-item" href="destinations.html#grooming-hacks">Grooming Hacks</a></li>
+                <li><a class="dropdown-item" href="destinations.html#toy-tips">Toy Tips</a></li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="calendar.html">Choose a date</a>
             </li>
             <!-- A call to action at the end of the navigation bar.
               This uses the Offcanvas pattern, see documentation at https://getbootstrap.com/docs/5.1/components/offcanvas/ -->
             <li class="nav-item ms-lg-auto">
-              <button class="btn btn-danger" data-bs-target="#offcanvas" data-bs-toggle="offcanvas" aria-controls="offcanvas">
-                Contact us!
+              <button class="btn btn-green" data-bs-target="#offcanvas" data-bs-toggle="offcanvas" aria-controls="offcanvas">
+                Sign Up!
               </button>
             </li>
           </ul>
@@ -80,12 +73,12 @@
       <div class="row">
         <!-- The column with the logo gets smaller and smaller, from full width to 1/6th -->
         <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3 col-xxl-2">
-          <img class="w-50 d-block mx-auto" src="images/cotravel-logo.svg" alt="CoTravel Logo">
+          <img class="w-50 d-block mx-auto" src="images/bark-budget-logo.png" alt="BarkBudget Logo">
         </div>
         <!-- The column with the name and tag line gets bigger and bigger -->
-        <div class="col-sm-5 col-md-6 col-lg-7 col-xl-8 col-xxl-9 text-center">
-          <h1><strong><span class="text-cyan">CO</span><span class="text-magenta">TRAVEL</span></strong></h1>
-          <h2>Your guaranteed covid-proof holidays</h2>
+        <div class="ms-auto col-sm-5 col-md-6 col-lg-7 col-xl-8 col-xxl-9 text-center">
+          <h1><strong><span class="text-brown">Bark</span><span class="text-green">Budget</span></strong></h1>
+          <h2>Bringing happy pups and wallet-friendly resources together</h2>
         </div>
       </div>
     </div>
@@ -93,53 +86,51 @@
 
     <!-- The container for the description of services on the home page -->
     <div class="container" id="services">
-      <h2 class="text-center mt-4 mb-2">How does <span class="text-cyan">CO</span><span class="text-magenta">TRAVEL</span> work?</h2>
+      <h2 class="text-center mt-4 mb-2">What can <span class="text-brown">Bark</span><span class="text-green">Budget</span> offer you?</h2> <br>
       <div class="row mb-5">
         <!-- 1 column at XS, 2 columns at S, 3 columns at M, 4 columns at L -->
         <div class="col-sm-6 col-md-4 col-lg-3 my-2">
           <!-- This section uses cards, check the Bootstrap Card documentation at https://getbootstrap.com/docs/5.1/components/card/ -->
           <div class="card border-primary h-100">
             <div class="card-header bg-primary text-light">
-              <div class="float-start fw-bolder fs-1 me-2">1</div>
-              <h5>Date or destination?</h5>
+              <div class="float-start fw-bolder fs-1 me-2 my-header"></div>
+              <h5>Deliciously affordable dog meal recipes</h5>
             </div>
             <div class="card-body">
-              <p class="card-text">You can either plan travel based on <strong><a href="destinations.html">where</a></strong> you want to travel or <strong><a href="calendar.html">when</a></strong> you want to go</p>
+              <p class="card-text">[Insert copy here]</p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 my-2">
           <div class="card border-primary h-100">
             <div class="card-header bg-primary text-light ">
-              <div class="float-start fw-bolder fs-1 me-2">2</div>
-              <h5>Make your choice and get in touch</h5>
+              <div class="float-start fw-bolder fs-1 me-2"></div>
+              <h5>Product recommendations and discount vouchers</h5>
             </div>
             <div class="card-body">
-              <p class="card-text">Choose from our list of <a href="destinations.html">destinations</a> or from our <a href="calendar.html">calendar</a> and contact us for a quote.</p>
+              <p class="card-text">[Insert copy here]</p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 my-2">
           <div class="card border-primary h-100">
             <div class="card-header bg-primary text-light ">
-              <div class="float-start fw-bolder fs-1 me-2">3</div>
-              <h5>Get a personal quote</h5>
+              <div class="float-start fw-bolder fs-1 me-2">&nbsp;</div>
+              <h5>Fun DIY projects for toys and more</h5>
             </div>
             <div class="card-body">
-              <p class="card-text">Based on your preferences, we build your personalized travel plan.</p>
-              <p class="card-text">The quote we give you is guaranteed, we won't charge you extra if we need to change the date or destination at the last minute.</p>
+              <p class="card-text">[Insert copy here]</p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-12 col-lg-3 my-2">
           <div class="card border-danger h-100">
             <div class="card-header bg-danger text-light ">
-              <div class="float-start fw-bolder fs-1 me-2">4</div>
-              <h5>Enjoy your travel</h5>
+              <div class="float-start fw-bolder fs-1 me-2"></div>
+              <h5>A community of like-minded dog parents on a budget</h5>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">If you've chosen a <strong><a href="destinations.html">destination</a></strong>, you will be booked as soon as you can travel without a quarantine.</li>
-              <li class="list-group-item">If you've oped for a <strong><a href="calendar.html">fixed date</a></strong>, we might have to change your destination at the last minute.</li>
+              <li class="list-group-item">[Insert copy here]</li>
             </ul>
           </div>
         </div>
@@ -158,38 +149,32 @@
       see documentation at https://getbootstrap.com/docs/5.1/components/offcanvas/ -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
       <div class="offcanvas-header">
-        <h3 class="offcanvas-title" id="offcanvasLabel">Contact us</h3>
+        <h3 class="offcanvas-title" id="offcanvasLabel">Sign Up</h3>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <div>
-          <h5>Call <span class="text-cyan fw-bold">CO</span><span class="text-magenta fw-bold">TRAVEL</span> now for a quote</h5>
-          <a class="btn btn-outline-danger" href="tel:+31765332203">Call (076) 533 22 03</a>
-        </div>
-        <hr>
-        <div>
-          <h5>Fill in the form to email us</h5>
+		  <div>
+                By signing up to our
+                <span class="text-brown fw-bold">Bark</span><span class="text-green fw-bold">Budget</span>
+                newsletter, you'll be the first to know about the launch of our budget-conscious dog parent forum!
+            </div>
+		  <div>
           <!-- This form includes required fields. For more details on validation,
             see https://getbootstrap.com/docs/5.1/forms/validation/ -->
-          <form class="needs-validation" method="post" action="mailto:buas@buas.nl?subject=CoTravel%20Enquiry" enctype="text/plain">
+          <form class="needs-validation" method="post" action="mailto:barkbudget@gmail.com?subject=BarkBudget%20Newsletter%20Subscription" enctype="text/plain">
             <div class="my-3">
               <label for="emailfield" class="form-label">Email address</label>
               <input type="email" class="form-control" id="emailfield" name="sender-email" required>
             </div>
-            <div class="my-3">
-              <label for="messagefield" class="form-label">Your message</label>
-              <textarea class="form-control" id="messagefield" rows="5" name="message-contents" required></textarea>
-            </div>
-            <div class="form-check my-3">
-              <input type="checkbox" class="form-check-input" id="newsletter" name="subscribe-newsletter" checked>
-              <label class="form-check-label" for="newsletter">
-                Subscribe to the awesome
-                <span class="text-cyan fw-bold">CO</span><span class="text-magenta fw-bold">TRAVEL</span>
-                newsletter, you'll be the first to know about our new destinations
-              </label>
-            </div>
-            <button type="submit" class="btn btn-primary">Send a message</button>
+            <button type="submit" class="btn btn-primary">Confirm</button>
           </form>
+        </div>
+		  <hr>
+        <div>
+          <h5>Follow us on the <span class="text-brown fw-bold">Bark</span><span class="text-green fw-bold">Budget</span> Instagram page</h5>
+          <a class=".btn-outline-danger" href="https://www.instagram.com/barkbudget/" target="_blank">
+			<img class="instagram-icon" src="images/Instagram-logo.png" alt="Instagram" width="60">
+			</a>
         </div>
       </div>
     </div>
