@@ -27,12 +27,38 @@ body {
     color: #ffffff;
 }
 
+
+/* Service descriptions */
+
+.bg-green {
+    background-color: #087248;
+    color: #ffffff;
+}
+
+.border-green {
+    border-color: #087248
+}
+
+.bg-brown {
+    background-color: #4E2503;
+    color: #ffffff;
+}
+
+
+.border-brown {
+    border-color: #4E2503
+}
+
 .my-header {
     height: 3em
 }
 
 /* Corporate navbar */
 
+#navbar-corporate a.active {
+	color: #800000;
+	font-weight: bold;
+}
 
 
 /* End of own styles */

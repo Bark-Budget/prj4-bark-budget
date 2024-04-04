@@ -24,16 +24,6 @@
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
       
-      <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZYLTF5P04"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-    gtag('config', 'G-HZYLTF5P04');
-      </script>
-      
       
 
     <title>BarkBudget</title>
@@ -67,6 +57,11 @@
                 <li><a class="dropdown-item" href="destinations.html#toy-tips">Toy Tips</a></li>
               </ul>
             </li>
+              
+              <button class="nav-link" onclick="location.href='corporate.html'" type="button">
+                Corporate Page
+            </button>
+              
             <!-- A call to action at the end of the navigation bar.
               This uses the Offcanvas pattern, see documentation at https://getbootstrap.com/docs/5.1/components/offcanvas/ -->
             <li class="nav-item ms-lg-auto">
@@ -102,8 +97,8 @@
         <!-- 1 column at XS, 2 columns at S, 3 columns at M, 4 columns at L -->
         <div class="col-sm-6 col-md-4 col-lg-3 my-2">
           <!-- This section uses cards, check the Bootstrap Card documentation at https://getbootstrap.com/docs/5.1/components/card/ -->
-          <div class="card border-primary h-100">
-            <div class="card-header bg-primary text-light">
+          <div class="card border-brown h-100">
+            <div class="card-header bg-brown text-light">
               <div class="float-start fw-bolder fs-1 me-2 my-header"></div>
               <h5>Deliciously affordable dog meal recipes</h5>
             </div>
@@ -113,8 +108,8 @@
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 my-2">
-          <div class="card border-primary h-100">
-            <div class="card-header bg-primary text-light ">
+          <div class="card border-brown h-100">
+            <div class="card-header bg-brown text-light ">
               <div class="float-start fw-bolder fs-1 me-2"></div>
               <h5>Product recommendations and discount vouchers</h5>
             </div>
@@ -124,8 +119,8 @@
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 my-2">
-          <div class="card border-primary h-100">
-            <div class="card-header bg-primary text-light ">
+          <div class="card border-brown h-100">
+            <div class="card-header bg-brown text-light ">
               <div class="float-start fw-bolder fs-1 me-2">&nbsp;</div>
               <h5>Fun DIY projects for toys and more</h5>
             </div>
@@ -135,8 +130,8 @@
           </div>
         </div>
         <div class="col-sm-6 col-md-12 col-lg-3 my-2">
-          <div class="card border-danger h-100">
-            <div class="card-header bg-danger text-light ">
+          <div class="card border-green h-100">
+            <div class="card-header bg-green text-light ">
               <div class="float-start fw-bolder fs-1 me-2"></div>
               <h5>A community of like-minded dog parents on a budget</h5>
             </div>
@@ -148,6 +143,7 @@
       </div>
     </div>
     <!-- End of service descriptions -->
+      
 
     <!-- Footer -->
     <footer class="mt-auto bg-dark text-light shadow-lg">
@@ -177,7 +173,7 @@
               <label for="emailfield" class="form-label">Email address</label>
               <input type="email" class="form-control" id="emailfield" name="sender-email" required>
             </div>
-            <button type="submit" class="btn btn-primary">Confirm</button>
+            <button type="submit" class="btn btn-green">Confirm</button>
           </form>
         </div>
 		  <hr>
