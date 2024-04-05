@@ -27,6 +27,10 @@ body {
     color: #ffffff;
 }
 
+.indented-p {
+    padding-left: 20px;
+  }
+
 
 /* Service descriptions */
 
@@ -53,12 +57,11 @@ body {
 }
 
 
-/* Corporate navbar */
+/* Corporate */
 
 #navbar-corporate a.active {
 	color: #800000;
 	font-weight: bold;
 }
-
 
 /* End of own styles */
