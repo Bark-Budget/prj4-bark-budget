@@ -42,18 +42,22 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav flex-grow-1">
             <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="tips.html" id="destinationDropdownButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link active dropdown-toggle" href="tips.html" id="tipDropdownButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Our pawsome tips
               </a>
-              <ul class="dropdown-menu" aria-labelledby="destinationDropdownButton" id="destinationDropdown">
+              <ul class="dropdown-menu" aria-labelledby="tipDropdownButton" id="tipDropdown">
                 <li><a class="dropdown-item" aria-current="page" href="tips.html#top">All tips</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="tips.html">Monthly Doggy Budget</a></li>
-                <li><a class="dropdown-item" href="tips.html">Affordable Dog Food</a></li>
-                <li><a class="dropdown-item" href="tips.html">Grooming Hacks</a></li>
-                <li><a class="dropdown-item" href="tips.html">Toy Tips</a></li>
+                <li><a class="dropdown-item" href="tips.html#monthly-doggy-budget-tip">Monthly Doggy Budget</a></li>
+                <li><a class="dropdown-item" href="tips.html#affordable-dog-food-tip">Affordable Dog Food</a></li>
+                <li><a class="dropdown-item" href="tips.html#grooming-hacks-tip">Grooming Hacks</a></li>
+                <li><a class="dropdown-item" href="tips.html#toy-tips-tip">Toy Tips</a></li>
               </ul>
             </li>
+              
+              <button class="nav-link" onclick="location.href='corporate.html'" type="button">
+                Corporate Page
+            </button>
             <!-- A call to action at the end of the navigation bar.
               This uses the Offcanvas pattern, see documentation at https://getbootstrap.com/docs/5.1/components/offcanvas/ -->
             <li class="nav-item ms-lg-auto">
@@ -69,35 +73,34 @@
     <!-- End of navigation bar -->
 
     <!-- A hero section. hero-header is defined in our own styles -->
-    <div class="bg-dark py-4 text-light container-fluid hero-header text-center">
+    <div class="bg-beige py-4 container-fluid hero-header">
     </div>
-
+<div class="container" id="services">
+    <h4 class="text-center mt-4 mb-2">All our wallet-friendly tips</h4>
+      </div>
     <!-- The list of tips uses a "Tab" system.
       Visit https://getbootstrap.com/docs/5.1/components/navs-tabs/#tabs for details -->
     <div class="container">
-      <ul class="nav nav-pills fw-bold my-2" role="tablist" id="destinationTab">
+      <ul class="nav nav-pills fw-bold my-2 text" role="tablist" id="tipTab">
         <li class="nav-item" role="presentation">
-          <button class="nav-link bg-gradient" id="monthly-doggy-budget-tab" data-bs-toggle="tab" data-bs-target="#monthly-doggy-budget" type="button" role="tab" aria-controls="monthly-doggy-budget" aria-selected="false" data-coords="-34.603333, -58.381667">Monthly Doggy Budget</button>
+          <button class="nav-link text-green" id="monthly-doggy-budget-tab" data-bs-toggle="tab" data-bs-target="#monthly-doggy-budget" type="button" role="tab" aria-controls="monthly-doggy-budget" aria-selected="false" data-coords="-34.603333, -58.381667">Monthly Doggy Budget</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="affordable-dog-food-tab" data-bs-toggle="tab" data-bs-target="#affordable-dog-food" type="button" role="tab" aria-controls="affordable-dog-food" aria-selected="false" data-coords="41.013611, 28.955">Affordable Dog Food</button>
+          <button class="nav-link text-green" id="affordable-dog-food-tab" data-bs-toggle="tab" data-bs-target="#affordable-dog-food" type="button" role="tab" aria-controls="affordable-dog-food" aria-selected="false" data-coords="41.013611, 28.955">Affordable Dog Food</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="grooming-hacks-tab" data-bs-toggle="tab" data-bs-target="#grooming-hacks" type="button" role="tab" aria-controls="grooming-hacks" aria-selected="false" data-coords="34.275556, 132.307778">Grooming Hacks</button>
+          <button class="nav-link text-green" id="grooming-hacks-tab" data-bs-toggle="tab" data-bs-target="#grooming-hacks" type="button" role="tab" aria-controls="grooming-hacks" aria-selected="false" data-coords="34.275556, 132.307778">Grooming Hacks</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="toy-tips-tab" data-bs-toggle="tab" data-bs-target="#toy-tips" type="button" role="tab" aria-controls="toy-tips" aria-selected="false" data-coords="40.712778, -74.006111">Toy Tips</button>
+          <button class="nav-link text-green" id="toy-tips-tab" data-bs-toggle="tab" data-bs-target="#toy-tips" type="button" role="tab" aria-controls="toy-tips" aria-selected="false" data-coords="40.712778, -74.006111">Toy Tips</button>
         </li>
       </ul>
       <!-- End of navigation tabs -->
 
-      <!-- An empty div for the map which will be filled in by the Leaflet library.
-          Visit https://leafletjs.com/ to find out how maps work -->
-      <div id="map" class="w-100 my-2"></div>
 
-      <!-- This is where details on each destination will be -->
+      <!-- This is where details on each tip will be -->
       <div class="tab-content mb-5">
-        <!-- The destination panes start hidden, but will be made visible when clicking on a destination -->
+        <!-- The tip panes start hidden, but will be made visible when clicking on a tip -->
         <div class="tab-pane fade" id="monthly-doggy-budget" role="tabpanel" aria-labelledby="monthly-doggy-budget-tab">
           <div class="bg-light bg-gradient fw-bold py-4 text-center">
             <h3>Monthly Doggy Budget</h3>
@@ -165,10 +168,8 @@
           </div></div>
       </div>
     </div>
-    <!-- End of destination details -->
+    <!-- End of tip details -->
 
-    <!-- Calling JavaScript code to initialize the map and make it interactive. -->
-    <script src="js/map.js"></script>
     
     <!-- Footer -->
     <footer class="mt-auto bg-dark text-light shadow-lg">
@@ -198,7 +199,7 @@
               <label for="emailfield" class="form-label">Email address</label>
               <input type="email" class="form-control" id="emailfield" name="sender-email" required>
             </div>
-            <button type="submit" class="btn btn-primary">Confirm</button>
+            <button type="submit" class="btn btn-green">Confirm</button>
           </form>
         </div>
 		  <hr>

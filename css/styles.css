@@ -1,25 +1,43 @@
 @import url("https://use.typekit.net/kuw2tbx.css");
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 
 /* Styles for all pages */
 
 body {
-	font-family: century-gothic, sans-serif;
+    font-family: inter, century-gothic, sans-serif;
 }
 
-.text-brown {
+.title-text {
+    font-size: 4em;
+}
+
+.title-text-brown {
 	color: #4E2503;
+    font-family: 'Chewy';
+}
+
+.title-text-green {
+	color: #087248;
+    font-family: 'Chewy';
 }
 
 .text-green {
-	color: #087248;
+    color: #087248;
+}
+
+.bg-beige {
+    color: #DE9D68;
 }
 
 .hero-header {
-	background-image: url("../images/money-dog.jpg");
-	background-size: cover;
-	background-position: 50% 20%;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-    min-height: 300px;
+    background-color: #DE9D68;
+	background-image: url("../images/banner-bark-budget.png");
+	background-size: contain;
+	background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
 }
 
 .btn-green {
@@ -54,6 +72,13 @@ body {
 
 .my-header {
     height: 3em
+}
+
+/* Tip pages*/
+
+#tipTab {
+    display: flex;
+    justify-content: center;
 }
 
 
